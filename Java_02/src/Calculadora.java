@@ -4,18 +4,16 @@ public class Calculadora {
     public float Somar(float a, float b){
         return a + b;
     }
-
     public float Subtrair(float a, float b){
         return a - b;
     }
-
-    public float Dividir(int a, int b){
+    public float Dividir(float a, float b){
         return a / b;
     }
-
-    public float Multiplicar(int a, int b){
+    public float Multiplicar(float a, float b){
         return a * b;
     }
+
     //Fazer;
     public float Potencializar(int a){
         return a;
