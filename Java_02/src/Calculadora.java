@@ -15,8 +15,11 @@ public class Calculadora {
     }
 
     //Fazer;
-    public float Potencializar(int a){
-        return a;
+    public float Potencializar(float a, int b){
+        float result = 1;
+    
+        for (int i = 0; i < b; i++) result *= a;
+            return result;
     }
     public float Racionalizar(){
         return 1;

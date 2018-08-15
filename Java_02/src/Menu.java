@@ -12,11 +12,18 @@ public class Menu {
 
     public void MenuPrincipal(){
         System.out.println("Olá bem-vindo(a) a calculadora:");
-        System.out.println("Escolha a operacao:\n1. Adição\n2. Subtracao\n3. Multiplicacao\n4. Divisao");
+        System.out.println("Escolha a operacao:\n1. Adição\n2. Subtracao\n3. Multiplicacao\n4. Divisao\n5. Potencialização");
 
-        podeRodar = false;
+        podeRodar = true;
         opcao = sc.nextInt();
 
+        if(podeRodar) {
+            System.out.print("Digite o primeiro valor: ");
+            a = sc.nextFloat();
+            System.out.print("Digite o segundo valor: ");
+            b = sc.nextFloat();
+
+        }
         switch(opcao){
             case 1:
                 //Bloco execultavel;
@@ -35,18 +42,15 @@ public class Menu {
                 System.out.println(calculadora.Dividir(a, b));
                 podeRodar = true;
                 break;
-                default:
-                    System.out.println("Nenhuma opercao...");
-                    break;
+            case 5:
+                System.out.println(calculadora.Potencializar(a, (int) b));
+                podeRodar = true;
+                break;
+            default:
+                System.out.println("Nenhuma opercao...");
+                break;
         }
 
-        if(podeRodar) {
-            System.out.print("Digite o primeiro valor: ");
-            a = sc.nextFloat();
-            System.out.print("Digite o segundo valor: ");
-            b = sc.nextFloat();
-
-        }
         podeRodar = false;
         sc.close();
     }
