@@ -28,6 +28,5 @@ public class Exercise_01 {
         }
         porcentagem = ((100.0 * contador / n));
         System.out.printf("Porcentagem Final:  %.3f", porcentagem);
-
     }
 }

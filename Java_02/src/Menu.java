@@ -11,8 +11,15 @@ public class Menu {
     boolean podeRodar;
 
     public void MenuPrincipal(){
+
         System.out.println("Olá bem-vindo(a) a calculadora:");
-        System.out.println("Escolha a operacao:\n1. Adição\n2. Subtracao\n3. Multiplicacao\n4. Divisao\n5. Potencialização");
+        System.out.println("Escolha a operacao:" +
+                "\n1. Adição" +
+                "\n2. Subtracao" +
+                "\n3. Multiplicacao" +
+                "\n4. Divisao" +
+                "\n5. Potencialização" +
+                "\n6. Racionalizar");
 
         podeRodar = true;
         opcao = sc.nextInt();
@@ -28,23 +35,21 @@ public class Menu {
             case 1:
                 //Bloco execultavel;
                 System.out.println(calculadora.Somar(a, b));
-                podeRodar = true;
                 break;
             case 2:
                 System.out.println(calculadora.Subtrair(a, b));
-                podeRodar = true;
                 break;
             case 3:
                 System.out.println(calculadora.Multiplicar(a, b));
-                podeRodar = true;
                 break;
             case 4:
                 System.out.println(calculadora.Dividir(a, b));
-                podeRodar = true;
                 break;
             case 5:
                 System.out.println(calculadora.Potencializar(a, (int) b));
-                podeRodar = true;
+                break;
+            case 6:
+                System.out.println(calculadora.Racionalizar(a));
                 break;
             default:
                 System.out.println("Nenhuma opercao...");

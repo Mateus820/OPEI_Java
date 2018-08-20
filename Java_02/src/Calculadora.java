@@ -13,15 +13,6 @@ public class Calculadora {
     public float Multiplicar(float a, float b){
         return a * b;
     }
-
-    //Fazer;
-    public float Potencializar(float a, int b){
-        float result = 1;
-    
-        for (int i = 0; i < b; i++) result *= a;
-            return result;
-    }
-    public float Racionalizar(){
-        return 1;
-    }
+    public double Potencializar(double a, double b){return Math.pow(a, b); }
+    public double Racionalizar(double a){ return Math.pow(a, 0.5); }
 }
